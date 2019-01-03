@@ -1,0 +1,136 @@
+<!-- Personal Website by Rachel Klesius -->
+<!-- Last updated on: 12/14/2018 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skills</title>
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="rachels-website.css" type="text/css">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- make parent of dropdown in nav clickable-->
+    <script>
+        jQuery(function($) {
+            $('.navbar .dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+            });
+
+            $('.navbar .dropdown > a').click(function(){
+                location.href = this.href;
+            });
+
+        });
+    </script>
+    
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <h1>
+                Rachel <span id="coral">Klesius</span>
+            </h1>
+            <p>Full Stack Developer for Hire</p>
+        </div>
+    </div>
+    
+    <!-- Navbar using Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-nav navbar-light"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-light navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           
+            <!-- For large and up displays, include dropdowns -->
+            <div class="d-none d-lg-block mx-auto" style="border-width: 0">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="homepage.html" id="navbarDropdownHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                            <a class="dropdown-item" href="homepage.html#about">About Me</a>
+                            <a class="dropdown-item" href="homepage.html#philo">Personal Philosophy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="experience.html" id="navbarDropdownExperience" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownExperience">
+                            <a class="dropdown-item" href="experience.html#projects">Projects</a>
+                            <a class="dropdown-item" href="experience.html#work">Work Experience</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="skills.html" id="navbarDropdownSkills" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Skills</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSkills">
+                            <a class="dropdown-item" href="skills.html#front">Front-End Development</a>
+                            <a class="dropdown-item" href="skills.html#back">Back-End Development</a>
+                            <a class="dropdown-item" href="skills.html#arduino">Arduino</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="leadership.html" id="navbarDropdownLeadership" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLeadership">
+                            <a class="dropdown-item" href="leadership.html#wicse">WICSE</a>
+                            <a class="dropdown-item" href="leadership.html#scuba">Scuba Club</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- For smaller displays, eliminate dropdowns -->
+            <div class="d-lg-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leadership.html">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="front">
+        <h2>Front-End Skills</h2>
+        <h3>HTML, CSS, and Javascript</h3>
+        <h3>React</h3>
+    </section>
+    
+    <section id="back">
+        <h2>Back-End Skills</h2>
+        <h3>Java</h3>
+        <h3>C</h3>
+        <h3>C++</h3>
+        <h3>Ruby with Sinatra</h3>
+    </section>
+    
+    <section id="arduino">
+       <h2>Arduino</h2>
+       <p>//TODO: add stuff here</p>
+    </section>
+</body>
+</html>
