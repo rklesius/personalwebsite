@@ -8,23 +8,23 @@ body {
     background-color: var(--main-color);
 }
 
-social-icon
+.social-media
 {
-    height: 200px;
+    text-align: right;
+    font-size: 3rem;
 }
-
 
 h1 {
     color: white;
     font-size: 3em;
 }
 
-#coral /* for firstname style */
+.coral /* for first name style */
 {
     color: var(--tertiary-color);
 }
 
-/* Navbar Styles */
+/**************** Navbar Styles ******************/
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
@@ -76,7 +76,7 @@ h1 {
     background-color: var(--main-color);
 }
 
-/* Style for content */
+/************* Style of content ****************/
 
 section {
     padding-top: 10px;
