@@ -78,6 +78,9 @@ h1 {
 
 /************* Style of content ****************/
 
+.header {
+    position: fixed;
+}
 section {
     padding-top: 10px;
 }
@@ -91,6 +94,17 @@ section h2 {
     border-bottom-color: var(--tertiary-color);
 }
 
+h3, blockquote {
+    padding: 5px;
+    color: white;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
 p {
     color: white;
+}
+
+blockquote {
+    size: 3em;
 }
