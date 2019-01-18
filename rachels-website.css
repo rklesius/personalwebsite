@@ -16,7 +16,7 @@ body {
 
 h1 {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .coral /* for first name style */
@@ -78,14 +78,45 @@ h1 {
 
 /************* Style of content ****************/
 
-.header {
+body {
+    padding: 20px;
+}
+
+.header {  /*TODO: Make the header static */
     position: fixed;
+}
+
+h2 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+img {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
+}
+
+a, a:hover {
+    color: var(--tertiary-color);
+}
+
+.in-txt-img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 section {
     padding-top: 10px;
 }
 
-section h2 {
+section h3 {
     padding: 7px;
     background-color: white;
     color: var(--main-color);
@@ -94,8 +125,8 @@ section h2 {
     border-bottom-color: var(--tertiary-color);
 }
 
-h3, blockquote {
-    padding: 5px;
+h4, blockquote {
+    padding: 10px;
     color: white;
     background-color: var(--secondary-color);
     text-align: center;
@@ -107,4 +138,9 @@ p {
 
 blockquote {
     size: 3em;
+}
+
+.contact {
+    text-align: center;
+    color: white;
 }
