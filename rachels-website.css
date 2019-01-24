@@ -10,14 +10,22 @@ body {
 
 .social-media
 {
-    text-align: right;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h1 {
     color: white;
     font-size: 4em;
+    padding-left: 10px;
 }
+
+@media (max-width: 767px) {
+
+    .social-media {text-align: center; width: 100%; padding-left: 5%;}
+    h1 {text-align: center;}
+    .header-caption {text-align: center; padding-right: 2%}
+}
+
 
 .coral /* for first name style */
 {
@@ -82,9 +90,7 @@ body {
     padding: 20px;
 }
 
-.header {  /*TODO: Make the header static */
-    position: fixed;
-}
+
 
 h2 {
     padding: 10px;
@@ -100,6 +106,22 @@ img {
     padding: 5px;
     border: 2px solid var(--tertiary-color);
     background-color: var(--tertiary-color);
+}
+
+/* For images on homepage */
+.catchphrase-img
+{
+
+}
+
+.catchphrase
+{
+
+}
+
+.catchphrase-text
+{
+
 }
 
 a, a:hover {
