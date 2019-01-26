@@ -109,31 +109,62 @@ img {
 }
 
 /* For images on homepage */
-.catchphrase-img
+.container
 {
+    position: relative;
+    width: 90%;
 
+}
+
+.catchphrase-container
+{
+    position: absolute;
+    bottom: 10%;
+    right: 1em;
+    left: 1em;
 }
 
 .catchphrase
 {
+    background: var(--secondary-color);
+    color: white;
+    border-bottom: none;
+    font-size: 2em;
+    text-align: center;
 
+}
+
+.catchphrase-img
+{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .catchphrase-text
 {
+    margin: 0;
+    opacity: 0;
+    background: rgba(30, 171, 155, 0.75);  /*light teal with less opacity*/
+    padding: 20px;
+    color: white;
+}
 
+.catchphrase-text:hover {
+    opacity: 1;
+}
+
+/* Get rid of hover on mobile */
+@media(hover: none)
+{
+    .catchphrase-text:hover {
+        opacity: 0;
+    }
 }
 
 a, a:hover {
     color: var(--tertiary-color);
 }
 
-.in-txt-img {
-    width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 section {
     padding-top: 10px;
 }
@@ -147,19 +178,33 @@ section h3 {
     border-bottom-color: var(--tertiary-color);
 }
 
-h4, blockquote {
+h4 {
     padding: 10px;
     color: white;
     background-color: var(--secondary-color);
     text-align: center;
 }
 
-p {
+h4 a
+{
     color: white;
 }
 
+h4 a:hover
+{
+    color: var(--main-color);
+}
+
 blockquote {
-    size: 3em;
+    padding: 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    color: white;
 }
 
 .contact {
