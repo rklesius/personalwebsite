@@ -126,11 +126,11 @@ img {
 
 .catchphrase
 {
-    background: var(--secondary-color);
     color: white;
     border-bottom: none;
     font-size: 2em;
     text-align: center;
+    background: rgba(30, 171, 155, 0.9);  /*light teal with less opacity*/
 
 }
 
