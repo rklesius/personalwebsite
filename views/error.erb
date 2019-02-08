@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Whoops!</title>
+    <link rel="icon" type="image/ico" href="/img/icon.jpg" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+    <!-- Font awesome social media icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- make parent of dropdown in nav clickable-->
+    <script>
+        jQuery(function($) {
+            $('.navbar .dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+            });
+
+            $('.navbar .dropdown > a').click(function(){
+                location.href = this.href;
+            });
+
+        });
+    </script>
+</head>
+<body class="container-fluid">
+    <!-- Header -->
+    <div class="row d-flex justify-content-between w-100">
+        <h1 class="col-xs-5">Rachel <span class="coral">Klesius</span></h1>
+        <div class="col-xs-6 social-media ">
+            <a href="https://github.com/rklesius" target="_blank"><i class="fab fa-github-square coral"></i></a>
+            <a href="https://www.linkedin.com/in/rklesius/" target="_blank"><i class="fab fa-linkedin coral"></i></a>
+            <a href="https://www.youtube.com/user/domoandfriends" target="_blank"><i class="fab fa-youtube-square coral"></i></a>
+        </div>
+    </div>
+    <p class="header-caption">Full Stack Developer for Hire </p>
+    <!-- Navbar using Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-nav navbar-light col-12">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-light navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <!-- For large and up displays, include dropdowns -->
+            <div class="d-none d-lg-block mx-auto" style="border-width: 0">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/" id="navbarDropdownHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                            <a class="dropdown-item" href="/#about">About Me</a>
+                            <a class="dropdown-item" href="/#philo">Personal Philosophy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/experience" id="navbarDropdownExperience" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownExperience">
+                            <a class="dropdown-item" href="/experience#projects">Projects</a>
+                            <a class="dropdown-item" href="/experience#work">Work Experience</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/skills" id="navbarDropdownSkills" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Skills</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSkills">
+                            <a class="dropdown-item" href="/skills#front">Front-End Development</a>
+                            <a class="dropdown-item" href="/skills#back">Back-End Development</a>
+                            <a class="dropdown-item" href="/skills#arduino">Arduino</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/leadership" id="navbarDropdownLeadership" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLeadership">
+                            <a class="dropdown-item" href="/leadership#wicse">WICSE</a>
+                            <a class="dropdown-item" href="/leadership#scuba">Scuba Club</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- For smaller displays, eliminate dropdowns -->
+            <div class="d-lg-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/leadership">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>404 Error!</h2>
+    <div class="row">
+      <div class="col-md-3 col-xs-12 mx-auto">
+        <img class="img-responsive" src="/img/cat.jpeg" alt="Kitty">
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="col-md-11 col-xs-12 mx-auto">
+        My cat must have batted this page under the couch
+      </h4>
+    </div>
+
+    
+</body>
+</html>
